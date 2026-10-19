@@ -24,7 +24,7 @@ tools/android/prepare_flutter_module.sh
 
 The preparation script verifies the exact Flutter source commit and invokes `flutter pub get` to generate `flutter_module/.android/include_flutter.groovy`. Gradle settings then include the generated `:flutter` project, and the application depends on it.
 
-On Windows, use Git Bash for the preparation script. Run it once after a clean clone and again after updating the pinned Flutter module or its dependencies.
+Use Flutter 3.47.0 or later (Dart 3.13 or later) and Git Bash on Windows. The preparation step uses `flutter pub get --enforce-lockfile`, so it stops rather than silently changing the pinned dependency resolution. Run it after a clean clone and again after updating the pinned Flutter module.
 
 ## Acceptance gates
 
