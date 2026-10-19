@@ -164,8 +164,6 @@ public class MwmActivity extends BaseMwmFragmentActivity
   @Nullable
   private OnmapDownloader mOnmapDownloader;
 
-  private String mDonatesUrl;
-
   private int mNavBarHeight;
 
   private RoutingPlanViewModel mRoutingPlanViewModel;
@@ -1997,12 +1995,6 @@ public class MwmActivity extends BaseMwmFragmentActivity
     showDownloader(false);
   }
 
-  public void onDonateOptionSelected()
-  {
-    Utils.openUrl(this, mDonatesUrl);
-    Framework.nativeDidShowDonationPage();
-  }
-
   public void onSettingsOptionSelected()
   {
     Intent intent = new Intent(this, SettingsActivity.class);
@@ -2102,10 +2094,11 @@ public class MwmActivity extends BaseMwmFragmentActivity
                                         this::onAddPlaceOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.download_maps, R.drawable.ic_download, getDownloadMapsCounter(),
                                         this::onDownloadMapsOptionSelected));
-      mDonatesUrl = Utils.getDonateUrl(getApplicationContext());
-      if (!TextUtils.isEmpty(mDonatesUrl))
-        items.add(new MenuBottomSheetItem(R.string.donate, R.drawable.ic_donate, this::onDonateOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.settings, R.drawable.ic_settings, this::onSettingsOptionSelected));
+      items.add(new MenuBottomSheetItem(R.string.espana_outdoor_menu, R.drawable.ic_layers_outdoors, () -> {
+        closeBottomSheet(MAIN_MENU_ID);
+        startActivity(new Intent(this, EspanaOutdoorActivity.class));
+      }));
       items.add(new MenuBottomSheetItem(R.string.start_track_recording, R.drawable.ic_track_recording_off, -1,
                                         this::onTrackRecordingOptionSelected));
       items.add(new MenuBottomSheetItem(R.string.share_my_location, R.drawable.ic_share,

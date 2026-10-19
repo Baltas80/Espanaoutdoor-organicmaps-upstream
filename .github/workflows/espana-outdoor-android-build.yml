@@ -1,0 +1,87 @@
+name: España Outdoor Android Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feat/espana-outdoor-integration
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+
+permissions:
+  contents: read
+
+concurrency:
+  group: espana-outdoor-android-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android-debug:
+    name: Build APK and run Android unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 200
+
+      - name: Install native build tools
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ninja-build ccache
+          cmake --version
+          ninja --version
+          ccache --version
+
+      - name: Configure Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Initialize Git submodules
+        shell: bash
+        run: |
+          git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Compile Google Debug APK and run unit tests
+        working-directory: android
+        shell: bash
+        env:
+          CMAKE_C_COMPILER_LAUNCHER: ccache
+          CMAKE_CXX_COMPILER_LAUNCHER: ccache
+        run: |
+          set -o pipefail
+          java -version
+          ./gradlew -Parm64 assembleGoogleDebug app:testGoogleDebug sdk:testDebug --no-daemon --stacktrace 2>&1 | tee ../android-build.log
+
+      - name: Upload APK
+        if: success()
+        uses: actions/upload-artifact@v6
+        with:
+          name: espana-outdoor-android-debug-apk
+          path: android/app/build/outputs/apk/**/*.apk
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload build log and reports
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: espana-outdoor-android-build-diagnostics
+          path: |
+            android-build.log
+            android/build/reports/**
+            android/app/build/reports/**
+            android/sdk/build/reports/**
+          if-no-files-found: warn
+          retention-days: 14

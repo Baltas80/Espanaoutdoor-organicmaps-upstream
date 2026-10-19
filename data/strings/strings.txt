@@ -8479,7 +8479,7 @@ zh-Hant = 問題和解答
 
 [donate]
 comment = Button in the main menu
-tags = android-app,apple-maps
+tags = apple-maps
 en = Donate
 af = Skenk
 ar = تبرع
@@ -37208,7 +37208,7 @@ zh-Hant = 地圖數據來自 OpenStreetMap
 
 [telegram_url]
 comment = Telegram group url for the "?" About page
-tags = android-app,apple-maps
+tags = apple-maps
 en = https://t.me/OrganicMapsApp
 ar = https://t.me/OrganicMapsApp
 az = https://t.me/OrganicMapsTR
@@ -37251,7 +37251,7 @@ zh-Hant = https://t.me/OrganicMapsApp
 
 [instagram_url]
 comment = Instagram account url for the "?" About page
-tags = android-app,apple-maps
+tags = apple-maps
 en = https://www.instagram.com/organicmaps.app
 ar = https://www.instagram.com/organicmaps.app
 be = https://www.instagram.com/organicmaps.app
