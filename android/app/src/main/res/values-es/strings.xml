@@ -921,4 +921,16 @@
     <string name="track_recording_stop_and_save">Parar y guardar</string>
     <!-- Accessibility label for the button that reverses the complete planned route, including intermediate stops. -->
     <string name="reverse_route">Invertir ruta</string>
+
+    <!-- Integración de España Outdoor -->
+    <string name="espana_outdoor_menu">España Outdoor</string>
+    <string name="espana_outdoor_title">España Outdoor</string>
+    <string name="espana_outdoor_intro">Descubre la naturaleza y la montaña en España. El mapa, la navegación sin conexión y la planificación de rutas utilizan el motor nativo de Organic Maps.</string>
+    <string name="espana_outdoor_navigation_section">Mapa y planificación</string>
+    <string name="espana_outdoor_open_map">Abrir mapa y navegación</string>
+    <string name="espana_outdoor_offline_maps">Gestionar mapas sin conexión</string>
+    <string name="espana_outdoor_routes_tracks">Rutas, favoritos y tracks</string>
+    <string name="espana_outdoor_services_section">Servicios de España Outdoor</string>
+    <string name="espana_outdoor_services_pending">La meteorología oficial, la evaluación del riesgo de ruta y Rescue Link aún no están conectados en esta compilación. Esta pantalla no muestra previsiones ni envía alertas de emergencia.</string>
+    <string name="espana_outdoor_attribution">Motor cartográfico y de navegación: Organic Maps. Datos del mapa: © colaboradores de OpenStreetMap. Consulta la atribución completa en el mapa y en la pantalla Acerca de.</string>
 </resources>
