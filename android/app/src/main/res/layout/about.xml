@@ -119,13 +119,6 @@
         android:textAlignment="viewStart"
         app:drawableStartCompat="@drawable/ic_question_mark" />
 
-    <TextView
-        android:id="@+id/report"
-        style="@style/MwmWidget.TextView.Item"
-        android:text="@string/report_a_bug"
-        android:textAlignment="viewStart"
-        app:drawableStartCompat="@drawable/ic_report_a_bug" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
