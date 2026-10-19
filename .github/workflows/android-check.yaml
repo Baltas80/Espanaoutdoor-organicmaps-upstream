@@ -53,6 +53,21 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v6
 
+      - name: Initialize España Outdoor Flutter source
+        shell: bash
+        run: git submodule update --init flutter_module
+
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.1'
+          channel: stable
+          cache: true
+
+      - name: Prepare Flutter module
+        shell: bash
+        run: tools/android/prepare_flutter_module.sh
+
       - name: Lint
         shell: bash
         working-directory: android
@@ -112,6 +127,17 @@ jobs:
       - name: Parallel submodules checkout
         shell: bash
         run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.38.1'
+          channel: stable
+          cache: true
+
+      - name: Prepare Flutter module
+        shell: bash
+        run: tools/android/prepare_flutter_module.sh
 
       - name: Configure ccache
         uses: hendrikmuhs/ccache-action@v1.2.24
