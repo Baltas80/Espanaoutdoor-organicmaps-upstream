@@ -587,7 +587,7 @@
     <activity
       android:name="app.organicmaps.EspanaOutdoorActivity"
       android:label="@string/app_name"
-      android:exported="true"
+      android:exported="false"
       android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
       android:hardwareAccelerated="true"
       android:theme="@style/MwmTheme"
