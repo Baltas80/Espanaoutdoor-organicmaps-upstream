@@ -911,4 +911,16 @@
     <string name="track_recording_stop_and_save">Stop and Save</string>
     <!-- Accessibility label for the button that reverses the complete planned route, including intermediate stops. -->
     <string name="reverse_route">Reverse route</string>
+
+    <!-- España Outdoor integration entry and native feature hub -->
+    <string name="espana_outdoor_menu">España Outdoor</string>
+    <string name="espana_outdoor_title">España Outdoor</string>
+    <string name="espana_outdoor_intro">Explore nature and mountains in Spain. Maps, offline navigation and route planning are powered by the native Organic Maps engine.</string>
+    <string name="espana_outdoor_navigation_section">Map and planning</string>
+    <string name="espana_outdoor_open_map">Open map and navigation</string>
+    <string name="espana_outdoor_offline_maps">Manage offline maps</string>
+    <string name="espana_outdoor_routes_tracks">Routes, bookmarks and tracks</string>
+    <string name="espana_outdoor_services_section">España Outdoor services</string>
+    <string name="espana_outdoor_services_pending">Official weather, route-risk assessment and Rescue Link are not connected in this build yet. This screen does not show forecasts or send emergency alerts.</string>
+    <string name="espana_outdoor_attribution">Mapping and navigation engine: Organic Maps. Map data: © OpenStreetMap contributors. See the map and About screen for full attribution.</string>
 </resources>
