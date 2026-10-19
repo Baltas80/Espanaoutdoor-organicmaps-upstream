@@ -137,7 +137,7 @@ jobs:
 
       - name: Prepare Flutter module
         shell: bash
-        run: tools/android/prepare_flutter_module.sh
+        run: bash tools/android/prepare_flutter_module.sh
 
       - name: Configure ccache
         uses: hendrikmuhs/ccache-action@v1.2.24
