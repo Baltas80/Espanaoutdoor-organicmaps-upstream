@@ -89,3 +89,8 @@
 	path = 3party/boost_headers
 	url = https://github.com/organicmaps/boost_headers.git
 	branch = master
+
+[submodule "flutter_module"]
+  path = flutter_module
+  url = https://github.com/Baltas80/Espana-Outdoors.git
+  branch = feature/embed-organicmaps-in-flutter-map
