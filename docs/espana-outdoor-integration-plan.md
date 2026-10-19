@@ -2,6 +2,8 @@
 
 ## Estado y alcance
 
+**Primera integración funcional incorporada:** el menú nativo incluye una entrada «España Outdoor» y abre una pantalla propia con accesos al mapa/navegación, descarga de mapas offline y rutas/favoritos/tracks. La conexión con meteorología oficial, evaluación de riesgos y Rescue Link sigue pendiente. La compilación y las pruebas del APK después de estos cambios deben completarse antes de aceptar esta iteración.
+
 Esta rama, `feat/espana-outdoor-integration`, parte del commit upstream `e78a075b7ae77bb31510918a26545d77ea4ae690`. Su propósito es integrar España Outdoor de forma incremental sobre la aplicación nativa, conservando el historial y permitiendo comparar cada cambio con upstream.
 
 **No se cambia todavía el identificador de aplicación, el nombre visible, los iconos ni el diseño de pantallas.** Primero debe obtenerse una compilación reproducible de la base sin modificaciones y validarse en un dispositivo Android.
