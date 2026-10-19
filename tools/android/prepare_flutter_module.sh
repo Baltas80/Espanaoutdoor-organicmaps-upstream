@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 MODULE="$ROOT/flutter_module"
-SOURCE_COMMIT="e946b85251ec44656cb868e541c39e291873aa41"
+SOURCE_COMMIT="e51c633240f18aa21d0dc421ad74bd987fb74d6e"
 
 if ! command -v git >/dev/null 2>&1; then
   echo "ERROR: Git is required to prepare the España Outdoor Flutter module." >&2
