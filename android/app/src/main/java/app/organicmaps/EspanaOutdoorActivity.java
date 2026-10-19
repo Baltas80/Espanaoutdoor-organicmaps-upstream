@@ -7,10 +7,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import app.organicmaps.bookmarks.BookmarkCategoriesActivity;
 import app.organicmaps.downloader.DownloaderActivity;
 
@@ -45,8 +43,7 @@ public final class EspanaOutdoorActivity extends AppCompatActivity
     introduction.setText(R.string.espana_outdoor_intro);
     introduction.setTextSize(16);
     LinearLayout.LayoutParams introParams =
-        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                                      LinearLayout.LayoutParams.WRAP_CONTENT);
+        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
     introParams.topMargin = dp(8);
     introParams.bottomMargin = dp(24);
     content.addView(introduction, introParams);
@@ -72,8 +69,7 @@ public final class EspanaOutdoorActivity extends AppCompatActivity
     attribution.setText(R.string.espana_outdoor_attribution);
     attribution.setTextSize(12);
     LinearLayout.LayoutParams attributionParams =
-        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                                      LinearLayout.LayoutParams.WRAP_CONTENT);
+        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
     attributionParams.topMargin = dp(28);
     content.addView(attribution, attributionParams);
   }
@@ -85,8 +81,7 @@ public final class EspanaOutdoorActivity extends AppCompatActivity
     title.setTextSize(19);
     title.setTypeface(null, android.graphics.Typeface.BOLD);
     LinearLayout.LayoutParams params =
-        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                                      LinearLayout.LayoutParams.WRAP_CONTENT);
+        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
     params.topMargin = dp(12);
     params.bottomMargin = dp(10);
     parent.addView(title, params);
@@ -99,8 +94,7 @@ public final class EspanaOutdoorActivity extends AppCompatActivity
     button.setAllCaps(false);
     button.setOnClickListener(listener);
     LinearLayout.LayoutParams params =
-        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
-                                      LinearLayout.LayoutParams.WRAP_CONTENT);
+        new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
     params.bottomMargin = dp(8);
     parent.addView(button, params);
   }
