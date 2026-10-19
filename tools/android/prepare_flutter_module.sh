@@ -34,7 +34,7 @@ fi
 echo "Preparing España Outdoor Flutter module at $SOURCE_COMMIT"
 (
   cd "$MODULE"
-  flutter pub get
+  flutter pub get --enforce-lockfile
 )
 
 if [[ ! -f "$MODULE/.android/include_flutter.groovy" ]]; then
