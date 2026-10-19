@@ -7,7 +7,7 @@ España Outdoor remains the primary user experience. The launcher opens the orig
 ## Build structure
 
 - The Android application and native Organic Maps engine remain hosted by this fork's existing Gradle application project.
-- The Flutter source is pinned as the `flutter_module` Git submodule to commit `347395727341ebcb2f24ded8211400f9bd5320b4` of `Baltas80/Espana-Outdoors`. That source commit contains the existing España Outdoor `lib/`, assets and module declaration.
+- The Flutter source is pinned as the `flutter_module` Git submodule to commit `e51c633240f18aa21d0dc421ad74bd987fb74d6e` of `Baltas80/Espana-Outdoors`. That source commit contains the existing España Outdoor `lib/`, assets and module declaration.
 - `EspanaOutdoorActivity` is the launcher activity and hosts Flutter.
 - The Flutter method channel `es.espanaoutdoor/organic_maps` handles `openMap`; Android calls Organic Maps' own `MwmActivity.createShowMapIntent(...)` startup path.
 - Organic Maps' `MwmApplication`, C++ engine, offline maps and native activities remain in the same package/APK. The normal native attribution and licensing surfaces must remain available.
