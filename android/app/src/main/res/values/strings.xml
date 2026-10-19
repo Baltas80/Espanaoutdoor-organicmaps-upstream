@@ -35,17 +35,17 @@
     <string name="country_status_download_failed">Download has failed</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Try Again</string>
-    <string name="about_menu_title">About Organic Maps</string>
+    <string name="about_menu_title">España Outdoor</string>
     <!-- Text in About screen -->
-    <string name="about_headline">Free for everyone, made with love</string>
+    <string name="about_headline">Explora la naturaleza de España</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_1">• No ads, no tracking, no data collection</string>
+    <string name="about_proposition_1">• Rutas y orientación para actividades al aire libre</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_2">• No battery drain, works offline</string>
+    <string name="about_proposition_2">• Mapas y funciones disponibles sin conexión</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_3">• Fast, minimalist, developed by the community</string>
+    <string name="about_proposition_3">• Información práctica para explorar el territorio</string>
     <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Open-source application created by enthusiasts and volunteers.</string>
+    <string name="about_developed_by_enthusiasts">Una plataforma de España Outdoor.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Location Settings</string>
     <string name="close">Close</string>
@@ -262,9 +262,7 @@
     <string name="donate">Donate</string>
     <string name="already_donated">Already donated</string>
     <string name="remind_me_later">Remind later</string>
-    <string name="support_organic_maps">Support Organic Maps</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Support the project</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Copyright</string>
     <!-- Text in menu + Button in the main Help dialog. Used in home screen quick actions. -->
@@ -317,7 +315,6 @@
     <!-- Settings "Appearance" category: "Scheduled" title, should be consistent with the pref_appearance_title translation. -->
     <string name="pref_appearance_scheduled">Light from dawn till dusk</string>
     <!-- Tex label above the Donate button -->
-    <string name="donate_description">Gift free maps with no ads to millions of users!</string>
 
     <!-- SECTION: Routing dialogs strings -->
     <string name="dialog_routing_disclaimer_title">When following the route, please keep in mind:</string>
@@ -757,7 +754,6 @@
     <!-- A link to the TTS FAQ -->
     <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
-    <string name="translated_om_site_url">https://organicmaps.app/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <!-- A number of bookmarks and a number of tracks, separated by comma, like: 1 bookmark, 5 tracks -->
