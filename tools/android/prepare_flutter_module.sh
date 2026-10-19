@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 MODULE="$ROOT/flutter_module"
-SOURCE_COMMIT="347395727341ebcb2f24ded8211400f9bd5320b4"
+SOURCE_COMMIT="e946b85251ec44656cb868e541c39e291873aa41"
 
 if ! command -v git >/dev/null 2>&1; then
   echo "ERROR: Git is required to prepare the España Outdoor Flutter module." >&2
@@ -19,7 +19,7 @@ if [[ ! -d "$MODULE" ]] || ! git -C "$MODULE" rev-parse --is-inside-work-tree >/
 fi
 
 actual_commit="$(git -C "$MODULE" rev-parse HEAD)"
-exclude_file="$(git -C "$MODULE" rev-parse --git-path info/exclude)"
+exclude_file="$(git -C "$MODULE" rev-parse --absolute-git-dir)/info/exclude"
 mkdir -p "$(dirname "$exclude_file")"
 grep -qxF '/.android/' "$exclude_file" || printf '\n/.android/\n' >> "$exclude_file"
 if [[ "$actual_commit" != "$SOURCE_COMMIT" ]]; then
