@@ -584,5 +584,8 @@
     <meta-data
         android:name="androidx.car.app.minCarApiLevel"
         android:value="7" />
+    <activity
+      android:name="app.organicmaps.EspanaOutdoorActivity"
+      android:exported="false" />
   </application>
 </manifest>
