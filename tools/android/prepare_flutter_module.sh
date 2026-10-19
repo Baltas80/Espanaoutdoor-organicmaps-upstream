@@ -19,6 +19,9 @@ if [[ ! -d "$MODULE" ]] || ! git -C "$MODULE" rev-parse --is-inside-work-tree >/
 fi
 
 actual_commit="$(git -C "$MODULE" rev-parse HEAD)"
+exclude_file="$(git -C "$MODULE" rev-parse --git-path info/exclude)"
+mkdir -p "$(dirname "$exclude_file")"
+grep -qxF '/.android/' "$exclude_file" || printf '\n/.android/\n' >> "$exclude_file"
 if [[ "$actual_commit" != "$SOURCE_COMMIT" ]]; then
   echo "ERROR: Flutter source mismatch. Expected $SOURCE_COMMIT, got $actual_commit." >&2
   exit 1
