@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- SECTION: Strings -->
+    <string name="app_name">España Outdoor</string>
+<!-- SECTION: Strings -->
     <!-- Button text (should be short) -->
     <string name="back">Back</string>
     <!-- Button text (should be short) -->
@@ -161,7 +162,7 @@
     <string name="load_kmz_failed">Failed to load bookmarks. The file may be corrupted or defective.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">The file type is not recognized by the app:\n%1$s</string>
-    <!-- Failed to open a bookmarks or tracks file in Organic Maps. -->
+    <!-- Failed to open a bookmarks or tracks file in España Outdoor. -->
     <string name="failed_to_open_file">Failed to open file %1$s\n\n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Edit</string>
@@ -174,9 +175,9 @@
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Share</string>
     <!-- Email subject when sharing a place. %1$@ is the place name or address. -->
-    <string name="share_place_subject">%1$s on Organic Maps</string>
+    <string name="share_place_subject">%1$s on España Outdoor</string>
     <!-- Email subject when sharing a place that has no name or address. -->
-    <string name="share_place_subject_default">A place on Organic Maps</string>
+    <string name="share_place_subject_default">A place on España Outdoor</string>
     <!-- Share by email button text, also used in editor and About. -->
     <string name="email">Email</string>
     <!-- Text for message when used successfully copied something -->
@@ -248,7 +249,7 @@
     <string name="menu">Menu</string>
     <!-- Text in menu -->
     <string name="website">Website</string>
-    <!-- Text in About menu, opens Organic Maps news website -->
+    <!-- Text in About menu, opens España Outdoor news website -->
     <string name="news">News</string>
     <!-- Settings: Send feedback button and dialog title -->
     <string name="feedback">Feedback</string>
@@ -262,7 +263,7 @@
     <string name="donate">Donate</string>
     <string name="already_donated">Already donated</string>
     <string name="remind_me_later">Remind later</string>
-    <string name="support_organic_maps">Support Organic Maps</string>
+    <string name="support_organic_maps">Support España Outdoor</string>
     <!-- Button in the main Help dialog -->
     <string name="how_to_support_us">Support the project</string>
     <!-- Button in the main Help dialog -->
@@ -441,7 +442,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Community-created OpenStreetMap data as of %s. Learn more about how to edit and update the map at OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) is a community project to build a free and open map. It\'s the main source of map data in Organic Maps and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) is a community project to build a free and open map. It\'s the main source of map data in España Outdoor and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!</string>
     <string name="login_to_make_edits_visible">Create an OpenStreetMap account or log in to publish your map edits to the world.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d of %2$d</string>
@@ -456,7 +457,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Note to OpenStreetMap volunteers (optional)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Describe errors on the map or things that cannot be edited with Organic Maps</string>
+    <string name="editor_note_hint">Describe errors on the map or things that cannot be edited with España Outdoor</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Your edits are uploaded to the public <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> database. Please do not add personal or copyrighted information.</string>
     <string name="editor_more_about_osm">More about OpenStreetMap</string>
@@ -466,7 +467,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations… -->
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Can\'t find a suitable category?</string>
-    <string name="editor_category_unsuitable_text">Organic Maps allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://organicmaps.app/faq/editing/advanced-map-editing">guide</a> for detailed step by step instructions.</string>
+    <string name="editor_category_unsuitable_text">España Outdoor allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://espana-outdoor.invalid/faq/editing/advanced-map-editing">guide</a> for detailed step by step instructions.</string>
     <string name="downloader_no_downloaded_maps_title">You haven\'t downloaded any maps</string>
     <string name="downloader_no_downloaded_maps_message">Download maps to search and navigate offline.</string>
     <string name="current_location_unknown_error_title">Current location is unknown.</string>
@@ -540,7 +541,7 @@
     <!-- Alert to ask user relogin to OpenStreetMap with OAuth2 flow after OAuth1 authentication is deprecated. -->
     <string name="alert_reauth_message">Please login to OpenStreetMap to automatically upload all your map edits. Learn more <a href="https://github.com/organicmaps/organicmaps/issues/6144">here</a>.</string>
     <string name="dialog_error_storage_title">Storage access problem</string>
-    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card or contact us at support\@organicmaps.app</string>
+    <string name="dialog_error_storage_message">External storage is not accessible. The SD card may have been removed, damaged, or the file system is read-only. Please, check your SD card or contact us at support\@espana-outdoor.invalid</string>
     <string name="setting_emulate_bad_storage">Emulate bad storage</string>
     <string name="error_enter_correct_name">Please enter a correct name</string>
     <string name="bookmark_lists">Lists</string>
@@ -753,9 +754,9 @@
     <!-- Telegram group url for the "?" About page -->
     <string name="telegram_url">https://t.me/OrganicMapsApp</string>
     <!-- Instagram account url for the "?" About page -->
-    <string name="instagram_url">https://www.instagram.com/organicmaps.app</string>
+    <string name="instagram_url"></string>
     <!-- A link to the TTS FAQ -->
-    <string name="tts_info_link">https://organicmaps.app/faq/text-to-speech-android-tts/</string>
+    <string name="tts_info_link"></string>
     <!-- Include only languages supported on the website, add new translations here: https://github.com/organicmaps/website/tree/master/content -->
     <string name="translated_om_site_url"></string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
@@ -783,9 +784,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Our main goal is to build fast, privacy-focused, easy-to-use maps that you will love.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">You are now using Organic Maps on the phone screen</string>
+    <string name="car_used_on_the_phone_screen">You are now using España Outdoor on the phone screen</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">You are now using Organic Maps on the car screen</string>
+    <string name="car_used_on_the_car_screen">You are now using España Outdoor on the car screen</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">You are connected to Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -793,7 +794,7 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">To the car screen</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">Organic Maps needs location access. When it\'s safe, check the notification on your phone.</string>
+    <string name="aa_location_permissions_request">España Outdoor needs location access. When it\'s safe, check the notification on your phone.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">This app needs your permission</string>
     <!-- Grant Permissions button. -->
@@ -915,12 +916,12 @@
     <!-- España Outdoor integration entry and native feature hub -->
     <string name="espana_outdoor_menu">España Outdoor</string>
     <string name="espana_outdoor_title">España Outdoor</string>
-    <string name="espana_outdoor_intro">Explore nature and mountains in Spain. Maps, offline navigation and route planning are powered by the native Organic Maps engine.</string>
+    <string name="espana_outdoor_intro">Explore nature and mountains in Spain with maps, offline navigation and route planning.</string>
     <string name="espana_outdoor_navigation_section">Map and planning</string>
     <string name="espana_outdoor_open_map">Open map and navigation</string>
     <string name="espana_outdoor_offline_maps">Manage offline maps</string>
     <string name="espana_outdoor_routes_tracks">Routes, bookmarks and tracks</string>
     <string name="espana_outdoor_services_section">España Outdoor services</string>
     <string name="espana_outdoor_services_pending">Official weather, route-risk assessment and Rescue Link are not connected in this build yet. This screen does not show forecasts or send emergency alerts.</string>
-    <string name="espana_outdoor_attribution">Mapping and navigation engine: Organic Maps. Map data: © OpenStreetMap contributors. See the map and About screen for full attribution.</string>
+    <string name="espana_outdoor_attribution">Map data: © OpenStreetMap contributors.</string>
 </resources>
