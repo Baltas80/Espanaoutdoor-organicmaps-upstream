@@ -164,7 +164,6 @@ public class MwmActivity extends BaseMwmFragmentActivity
   @Nullable
   private OnmapDownloader mOnmapDownloader;
 
-
   private int mNavBarHeight;
 
   private RoutingPlanViewModel mRoutingPlanViewModel;
@@ -1995,7 +1994,6 @@ public class MwmActivity extends BaseMwmFragmentActivity
     closeFloatingPanels();
     showDownloader(false);
   }
-
 
   public void onSettingsOptionSelected()
   {
