@@ -53,10 +53,25 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v6
 
+      - name: Initialize España Outdoor Flutter source
+        shell: bash
+        run: git submodule update --init flutter_module
+
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.0'
+          channel: stable
+          cache: true
+
+      - name: Prepare Flutter module
+        shell: bash
+        run: bash tools/android/prepare_flutter_module.sh
+
       - name: Lint
         shell: bash
         working-directory: android
-        run: ./gradlew lintAllModules
+        run: ./gradlew lintAllModules --stacktrace
 
       # Reviewdog is needed for the action below to report issues in the PR.
       - name: Install reviewdog
@@ -113,6 +128,17 @@ jobs:
         shell: bash
         run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
+      - name: Set up Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.47.0'
+          channel: stable
+          cache: true
+
+      - name: Prepare Flutter module
+        shell: bash
+        run: bash tools/android/prepare_flutter_module.sh
+
       - name: Configure ccache
         uses: hendrikmuhs/ccache-action@v1.2.24
         with:
@@ -130,7 +156,7 @@ jobs:
         run: |
           cmake --version
           ninja --version
-          ./gradlew -P${{ matrix.arch }} assemble${{ matrix.flavor }}
+          ./gradlew -P${{ matrix.arch }} assemble${{ matrix.flavor }} --stacktrace
 
       - name: Compile Wear Google Debug
         if: matrix.flavor == 'WebDebug'

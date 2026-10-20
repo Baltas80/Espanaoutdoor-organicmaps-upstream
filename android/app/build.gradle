@@ -215,6 +215,7 @@ afterEvaluate {
 }
 
 dependencies {
+  implementation project(':flutter')
   implementation project(':libs:api')
   implementation project(':libs:branding')
   implementation project(':libs:downloader')

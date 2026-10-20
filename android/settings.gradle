@@ -13,6 +13,16 @@ dependencyResolutionManagement {
         maven { url = 'https://www.jitpack.io' } // MPAndroidChart
     }
 }
+// The Flutter module is generated at a pinned España Outdoor source commit before Gradle starts.
+def flutterModuleConfig = new File(settingsDir.parentFile, "flutter_module/.android/include_flutter.groovy")
+if (!flutterModuleConfig.isFile()) {
+    throw new GradleException(
+        "España Outdoor Flutter module is not prepared. Run tools/android/prepare_flutter_module.sh first."
+    )
+}
+setBinding(new Binding([gradle: this]))
+evaluate(flutterModuleConfig)
+
 rootProject.name = 'Organic Maps'
 
 include ':app'
